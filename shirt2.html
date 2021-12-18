@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>ECOMMERCE</title>
+        <link rel="icon" type="image/icon" href="android-icon-144x144.png">
+
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <script src='jquery-1.8.3.min.js'></script>
+    <script src='jquery.elevatezoom.js'></script> 
+
+   <link rel="stylesheet" type="text/css" href="Ewebsite.css">
+   <style type="text/css">
+
+      
+    
+
+   </style>
+ 
+</head>
+
+
+<body style="background: black;">
+    
+     
+    
+    
+    <div class="container text-center mt-5 ">
+    <div class="row">
+        <div class="col ">
+            <div class="card">
+                <div class="card-body">
+                    <div class="card-text">
+                        <img id="img1" src="image2.1.png" height="100px" width="100px" onmouseover="col1()">
+                 
+                    </div><!--end of card-text-->
+                </div>  <!--end of card-body--> 
+            </div><!--end of card-->
+
+
+            <div class="card">
+                <div class="card-body">
+                    <div class="card-text">
+                        <img id="img2" src="image2.2.png" height="100px" width="100px" onmouseover="col2()">
+                 
+                    </div><!--end of card-text-->
+                </div>  <!--end of card-body--> 
+            </div><!--end of card-->
+
+            
+     
+            <div class="card">
+                <div class="card-body">
+                    <div class="card-text">
+                        <img id="img3" src="image2.3.png" height="100px" width="100px" onmouseover="col3()">
+                 
+                    </div><!--end of card-text-->
+                </div>  <!--end of card-body--> 
+            </div><!--end of card-->
+        </div><!--end of col-->
+
+         <div class="col">
+             <img id="main_img" class="main_img" src='image2.1.png'>
+    
+                    <script type="text/javascript">
+                        $("#main_img").elevateZoom({
+                        easing : true,
+                        scrollZoom : true,
+                        zoomWindowFadeIn: 500,
+                        zoomWindowFadeOut: 500,
+                        lensFadeIn: 500,
+                        lensFadeOut: 500,
+                        });
+                     </script>
+        </div><!--end of col-->
+
+    <div class="col">
+        
+        <div  style="margin-top: 15%; padding-left:10%">
+             <div class="flex">
+                     <p class="color">COLOR:</p>
+                        <div class="card2color1" onmouseover ="color1()" style="margin-left: 2%;margin-top: 1%; cursor: pointer;" ></div>
+                        <div class="card2color2" onmouseover="color2()" style="margin-left: 2%;margin-top: 1%;cursor: pointer;"></div>
+                        <div class="card2color3" onmouseover= "color3()" style="margin-left: 2%;margin-top: 1%;cursor: pointer;"></div>
+            </div><!--end of flex-->
+            <div class="flex">
+                <p class="size">SIZE:</p>
+                <div class="size1">39</div>
+                <div class="size2">40</div>
+                <div class="size3">41</div>
+                <div class="size4">42</div>
+            </div><!--end of flex-->
+            <h2 class="description">
+                        DESCRIPTION
+            </h2>
+            <ul>
+                <li>Care Instructions: Machine Wash</li>
+                <li>Fit Type: Regular</li>
+                <li>100% Cotton</li>
+                 <li>Regular fit</li>
+                    <li>Long sleeve</li>
+                <li>Machine wash</li>
+                <li>Made in India</li>
+            </ul>
+            <div class="cart">
+                    CAPTURE
+            </div>
+        </div>    
+
+        </div><!--end of col-->
+    </div><!--end of row-->
+
+
+
+</div><!--end of container-->
+
+
+ 
+ 
+
+</body>
+</html>
+<script type="text/javascript">
+    function col1()
+    {
+ 
+            document.getElementById("main_img").src="image2.1.png"
+            $("#main_img").elevateZoom({
+        easing : true,
+        scrollZoom : true,
+        zoomWindowFadeIn: 500,
+            zoomWindowFadeOut: 500,
+            lensFadeIn: 500,
+            lensFadeOut: 500
+    });
+        
+          
+     
+
+    }
+   
+    function col2()
+    { 
+         document.getElementById("main_img").src="image2.2.png"
+         $("#main_img").elevateZoom({
+        easing : true,
+        scrollZoom : true,
+        zoomWindowFadeIn: 500,
+            zoomWindowFadeOut: 500,
+            lensFadeIn: 500,
+            lensFadeOut: 500
+    });
+
+    }
+    function col3()
+    {
+            document.getElementById("main_img").src="image2.3.png"
+            $("#main_img").elevateZoom({
+        easing : true,
+        scrollZoom : true,
+        zoomWindowFadeIn: 500,
+            zoomWindowFadeOut: 500,
+            lensFadeIn: 500,
+            lensFadeOut: 500
+    });
+    }
+</script>
+<script type="text/javascript">
+    function color1()
+    {
+        document.getElementById("img1").src="image2.1.png"
+        document.getElementById("main_img").src="image2.1.png"
+        $("#main_img").elevateZoom({
+        easing : true,
+        scrollZoom : true,
+        zoomWindowFadeIn: 500,
+            zoomWindowFadeOut: 500,
+            lensFadeIn: 500,
+            lensFadeOut: 500
+    });
+        document.getElementById("img1").addEventListener("mouseover",fun1)
+        function fun1()
+        {
+            document.getElementById("main_img").src="image2.1.png"
+            $("#main_img").elevateZoom({
+        easing : true,
+        scrollZoom : true,
+        zoomWindowFadeIn: 500,
+            zoomWindowFadeOut: 500,
+            lensFadeIn: 500,
+            lensFadeOut: 500
+    });
+        }
+        
+
+        
+
+
+        document.getElementById("img2").src="image2.2.png"
+        document.getElementById("img2").addEventListener("mouseover",fun2)
+        function fun2()
+        {
+            document.getElementById("main_img").src="image2.2.png";
+            $("#main_img").elevateZoom({
+        easing : true,
+        scrollZoom : true,
+        zoomWindowFadeIn: 500,
+            zoomWindowFadeOut: 500,
+            lensFadeIn: 500,
+            lensFadeOut: 500
+                });
+        }
+
+
+        document.getElementById("img3").src="image2.3.png"
+        document.getElementById("img3").addEventListener("mouseover",fun3)
+        function fun3()
+        {
+            document.getElementById("main_img").src="image2.3.png";
+          $("#main_img").elevateZoom({
+        easing : true,
+        scrollZoom : true,
+        zoomWindowFadeIn: 500,
+            zoomWindowFadeOut: 500,
+            lensFadeIn: 500,
+            lensFadeOut: 500
+            });
+        }
+     }  
+    function color2()
+    {
+
+        document.getElementById("img1").src="image2.4.png"
+        document.getElementById("main_img").src="image2.4.png"
+        $("#main_img").elevateZoom({
+        easing : true,
+        scrollZoom : true,
+        zoomWindowFadeIn: 500,
+            zoomWindowFadeOut: 500,
+            lensFadeIn: 500,
+            lensFadeOut: 500
+            });
+        document.getElementById("img1").addEventListener("mouseover",fun1)
+        function fun1()
+        {
+            document.getElementById("main_img").src="image2.4.png"
+            $("#main_img").elevateZoom({
+        easing : true,
+        scrollZoom : true,
+        zoomWindowFadeIn: 500,
+            zoomWindowFadeOut: 500,
+            lensFadeIn: 500,
+            lensFadeOut: 500
+    });
+        }
+
+        
+    
+        
+        
+
+        
+
+
+        document.getElementById("img2").src="image2.5.png";
+        document.getElementById("img2").addEventListener("mouseover",fun2)
+        function fun2()
+        {
+            document.getElementById("main_img").src="image2.5.png"
+            $("#main_img").elevateZoom({
+        easing : true,
+        scrollZoom : true,
+        zoomWindowFadeIn: 500,
+            zoomWindowFadeOut: 500,
+            lensFadeIn: 500,
+            lensFadeOut: 500
+    });
+        }
+
+
+        document.getElementById("img3").src="image2.6.png"
+        document.getElementById("img3").addEventListener("mouseover",fun3)
+        function fun3()
+        {
+            document.getElementById("main_img").src="image2.6.png"
+            $("#main_img").elevateZoom({
+        easing : true,
+        scrollZoom : true,
+        zoomWindowFadeIn: 500,
+            zoomWindowFadeOut: 500,
+            lensFadeIn: 500,
+            lensFadeOut: 500
+    });
+        }
+  
+    } 
+    function color3()
+    {
+        document.getElementById("img1").src="image2.7.png"
+        document.getElementById("main_img").src="image2.7.png";
+        $("#main_img").elevateZoom({
+        easing : true,
+        scrollZoom : true,
+        zoomWindowFadeIn: 500,
+            zoomWindowFadeOut: 500,
+            lensFadeIn: 500,
+            lensFadeOut: 500
+    });
+        document.getElementById("img1").addEventListener("mouseover",fun1)
+        function fun1()
+        {
+        
+            document.getElementById("main_img").src="image2.7.png";
+           $("#main_img").elevateZoom({
+        easing : true,
+        scrollZoom : true,
+        zoomWindowFadeIn: 500,
+            zoomWindowFadeOut: 500,
+            lensFadeIn: 500,
+            lensFadeOut: 500
+    });
+        }
+        
+        document.getElementById("img2").src="image2.8.png"
+        document.getElementById("img2").addEventListener("mouseover",fun2)
+        function fun2()
+        {
+        
+            document.getElementById("main_img").src="image2.8.png";
+            $("#main_img").elevateZoom({
+        easing : true,
+        scrollZoom : true,
+        zoomWindowFadeIn: 500,
+            zoomWindowFadeOut: 500,
+            lensFadeIn: 500,
+            lensFadeOut: 500
+    });
+        }
+
+        document.getElementById("img3").src="image2.9.png"
+        document.getElementById("img3").addEventListener("mouseover",fun3)
+        function fun3()
+        {
+            document.getElementById("main_img").src="image2.9.png"
+            $("#main_img").elevateZoom({
+        easing : true,
+        scrollZoom : true,
+        zoomWindowFadeIn: 500,
+            zoomWindowFadeOut: 500,
+            lensFadeIn: 500,
+            lensFadeOut: 500
+    });
+        }
+    } 
+</script>

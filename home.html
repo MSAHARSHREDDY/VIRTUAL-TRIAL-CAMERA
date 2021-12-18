@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>ECOMMERCE</title>
+    <link rel="icon" type="image/icon" href="android-icon-144x144.png">
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+   <link rel="stylesheet" type="text/css" href="Ewebsite.css">
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<script src="main.js"></script>
+
+   <style type="text/css">
+    /* width */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track 
+{
+        box-shadow: 5px 5px 25px 5px whitesmoke inset,2px 2px 10px 1px #00cdcd,-2px -2px 10px 1px #00cdcd  ;
+
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(transparent,#00c6ff);
+
+  border-radius: 10px;
+  
+}
+
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover 
+{
+        background: linear-gradient(transparent,#30ff00);
+
+}
+
+
+  </style>
+ 
+</head>
+<body style="background:black;">
+    <ul class="nav float-right" style="margin-top: -8%;margin-right: 5%;">
+            <li class="nav-item">
+                <a href="#" class="nav-link" data-target="#login" data-toggle="modal">LOGIN</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link" data-target="#signup" data-toggle="modal">SIGNUP</a>
+                
+            </li>
+    </ul>
+
+    <div class="modal fade" id="login">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header" style="background:whitesmoke">
+                   <h4 style="color: red;margin-left: 40%;font-weight: bold;">LOGIN</h4>
+                    <button type="submit" class="close" data-dismiss="modal" style="outline: none;">&times;</button>
+                </div><!-----end of modal-header-->
+
+                <div class="modal-body">
+                <label style="font-weight: bold;font-size: 20px;">Email:</label>
+                <input type="email" id="email1" class="form-control" autocomplete="off">
+                <span id="message5" style="color:red;font-weight:bold"></span>
+                <span id="message5.1" style="color:green;font-weight:bold;"></span>
+                <br>
+                <label style="font-weight:bold;font-size: 20px;">Password:</label>
+                <input type="password" name="" id="password1" class="form-control">
+                <span id="message6" style="color:red;font-weight:bold"></span>
+                <span id="message6.1" style="color:red;font-weight:bold"></span>
+
+                </div><!--end of modal-body-->
+
+
+                <div class="modal-footer" style="background:whitesmoke;">
+                    <form onsubmit=" return login()">
+                    <button type="submit"  class="btn btn-success">LOGIN</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    
+
+<!--------------signup------------------>
+    <div class="modal fade" id="signup">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header" style="background:whitesmoke;">
+                    <h4 style="color: red;margin-left: 40%;font-weight: bold;">SIGNUP</h4>
+                    <button type="submit" class="close" data-dismiss="modal" style="outline: none;">&times;</button>
+                
+                </div><!--end of header-->
+                <div class="modal-body">
+                  <form  method="post">
+
+                    <label style="font-weight:bold;font-size: 18px;">Name:</label>
+                    <input type="text" name="" id="name" class="form-control" autocomplete="off">
+                    <span id="message1" style="color:red;font-weight: bold;" ></span>
+                    <span id="message1.1" style="color:green;font-weight: bold;"></span>
+                    <br>
+
+                    <label style="font-weight:bold;font-size:18px">Email:</label>
+                    <input type="email" name="name" id="email" class="form-control" autocomplete="off">
+                    <span id="message2" style="color:red;font-weight:bold;"></span>
+                    <span id="message2.2" style="color:green;font-weight: bold;"></span>
+                    <br>
+
+                    <label style="font-weight:bold;font-size:18px">Password:</label>
+                    <input type="Password" name="name" id="password" class="form-control">
+                    <span id="message3" style="color:red;font-weight:bold"></span>
+                    <span id="message3.3" style="color:green;font-weight: bold;"></span>
+                    <br>
+
+                    <label style="font-weight:bold;font-size:18px">Confirm-Password:</label>
+                    <input type="password" name="" id="Confirm-Password" class="form-control">
+                    <span id="message4" style="color:red;font-weight:bold"></span>
+                    <span id="message4.4" style="color:green;font-weight: bold;"></span>
+                    <br>
+
+                </form>
+               </div><!--end of modal-body-->
+
+
+            <div class="modal-footer" style="background: whitesmoke;">
+                <form onsubmit="return signup()">
+                
+                <input type="submit" value="SIGNUP" name=""  class="btn btn-success">
+                </form>
+
+
+                <button type="submit" name="" class="btn btn-danger" class="close" data-dismiss="modal">CLOSE</button>
+            </div><!--end of modal-footer-->
+        </div><!--end of modal-content-->
+    </div><!--end of modal-dialog-->
+</div><!--end of modal-fade-->
+
+
+
+    
+   
+
+    <div class="container mt-5">
+
+        
+
+
+        
+             <div class="heading">VIRTUAL TRIAL CAMERA</div>
+
+             
+                
+
+        <div class="card-deck m-3 text-center">
+            <div class="card">
+                <div class="badge badge-pill badge-danger w-25 m-3 p-1">50% OFF</div>
+                <a  href="shirt1.html" class="card-body card-link">
+                    <img src="image1.1.png" height="300px" width="200px">
+                    <div class="flex">
+                       <div class="card1color1"></div>
+                       <div class="card1color2"></div>
+                       <div class="card1color3"></div>
+                    </div><!--end of flex-->
+                    <h3>$10</h3>
+                 </a><!--end of card-body-->
+            </div><!--end of card-->
+      
+
+        <div class="card">
+                <div class="badge badge-pill badge-danger w-25 m-3 p-1">30% OFF</div>
+                <a  href="shirt2.html" class="card-body card-link">
+                    <img src="image2.1.png" height="300px" width="200px">
+                    <div class="flex">
+                       <div class="card2color1"></div>
+                       <div class="card2color2"></div>
+                       <div class="card2color3"></div>
+                    </div><!--end of flex-->
+                    <h3>$15</h3>
+                 </a><!--end of card-body-->
+            </div><!--end of card-->
+      
+           
+    
+
+        
+           <div class="card">
+                <div class="badge badge-pill badge-danger w-25 m-3 p-1">40% OFF</div>
+                <a  href="shirt3.html" class="card-body card-link">
+                    <img src="image3.1.png" height="300px" width="200px">
+                    <div class="flex">
+                       <div class="card3color1"></div>
+                       <div class="card3color2"></div>
+                       <div class="card3color3"></div>
+                    </div><!--end of flex-->
+                    <h3>$12</h3>
+                 </a><!--end of card-body-->
+            </div><!--end of card-->
+
+            
+      
+     </div><!--end of card-deck-1-->
+
+     <!----card-2--------------->
+     <div class="heading "style="margin-top: 10%;">WATCHES</div>
+
+      <div class="card-deck m-3 text-center mt-5">
+            <div class="card">
+                <div class="badge badge-pill badge-danger w-25 m-3 p-1">10% OFF</div>
+                <a  href="watch1.html" class="card-body card-link">
+                    <img src="image4.1.png" height="230px" width="150px">
+                    <div class="flex">
+                       <div class="card4color1"></div>
+                       <div class="card4color2"></div>
+                       <div class="card4color3"></div>
+                    </div><!--end of flex-->
+                    <h3>$15</h3>
+                 </a><!--end of card-body-->
+            </div><!--end of card-->
+      
+
+        <div class="card">
+                <div class="badge badge-pill badge-danger w-25 m-3 p-1">15% OFF</div>
+                <a  href="watch2.html" class="card-body card-link">
+                    <img src="image5.1.png" height="230px" width="150px">
+                    <div class="flex">
+                       <div class="card5color1"></div>
+                       <div class="card5color2"></div>
+                       <div class="card5color3"></div>
+                    </div><!--end of flex-->
+                    <h3>$13</h3>
+                 </a><!--end of card-body-->
+            </div><!--end of card-->
+      
+           
+    
+
+        
+           <div class="card">
+                <div class="badge badge-pill badge-danger w-25 m-3 p-1">30% OFF</div>
+                <a  href="watch3.html" class="card-body card-link">
+                    <img src="image6.1.png" height="230px" width="150px">
+                    <div class="flex">
+                       <div class="card6color1"></div>
+                       <div class="card6color2"></div>
+                       <div class="card6color3"></div>
+                    </div><!--end of flex-->
+                    <h3>$12</h3>
+                 </a><!--end of card-body-->
+            </div><!--end of card-->
+
+            
+      
+     </div><!--end of card-deck-2-->
+
+
+
+<!--------card-3------->
+
+     <div class="heading "style="margin-top: 10%;">SHOES</div>
+
+      <div class="card-deck m-3 text-center mt-5 mb-5">
+            <div class="card">
+                <div class="badge badge-pill badge-danger w-25 m-3 p-1">12% OFF</div>
+                <a  href="shoes1.html" class="card-body card-link">
+                    <img src="image7.1.png" height="130px" width="250px" style="transform: rotate(25deg);">
+                    <div class="flex">
+                       <div class="card7color1"></div>
+                       <div class="card7color2"></div>
+                       <div class="card7color3"></div>
+                    </div><!--end of flex-->
+                    <h3>$9</h3>
+                 </a><!--end of card-body-->
+            </div><!--end of card-->
+      
+
+        <div class="card">
+                <div class="badge badge-pill badge-danger w-25 m-3 p-1">5% OFF</div>
+                <a  href="shoes2.html" class="card-body card-link">
+                    <img src="image8.1.png" height="130px" width="250px" style="transform:rotate(25deg);">
+                    <div class="flex">
+                       <div class="card8color1"></div>
+                       <div class="card8color2"></div>
+                       <div class="card8color3"></div>
+                    </div><!--end of flex-->
+                    <h3>$13</h3>
+                 </a><!--end of card-body-->
+            </div><!--end of card-->
+      
+           
+    
+
+        
+           <div class="card">
+                <div class="badge badge-pill badge-danger w-25 m-3 p-1">30% OFF</div>
+                <a  href="shoes3.html" class="card-body card-link">
+                    <img src="image9.1.png" height="130px" width="250px" style="transform:rotate(25deg);">
+                    <div class="flex">
+                       <div class="card9color1"></div>
+                       <div class="card9color2"></div>
+                       <div class="card9color3"></div>
+                    </div><!--end of flex-->
+                    <h3>$12</h3>
+                 </a><!--end of card-body-->
+            </div><!--end of card-->
+
+            
+      
+     </div><!--end of card-deck-3-->
+ 
+
+
+
+      
+     
+  </div><!--end of container-->  
+</body>
+</html>
+<!-------------------form validation------------>
